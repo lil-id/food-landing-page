@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for First Screen */
+.first-screen {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 730px;
+    background: rgba(112, 224, 0, 0.1);
+}
+
+.container-main-head div.container-logo {
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.container-main-head img.logo {
+    width: 82px;
+    height: 60px;
+}
+
+.container-main-head div.container-text-head {
+    width: 600px;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: -5px; 
+}
+
+.container-text-head h1.main-text-head-grey {
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 120px;
+    color: #343A40;
+}
+
+.main-text-head-green {
+    font-weight: 700;
+    font-size: 90px;
+    color: #65CA00;
+}
+
+.main-sub-text {
+    margin-top: -25px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 37px;
+    color: #71767b;
+}
+
+/* Container Main Image */
+.container-main-image {
+    display: flex;
+    width: 700px;
+    height: 550px;
+    margin-top: 120px;
+    margin-left: 180px;
+}
+
+.first-main-image {
+    align-self: flex-start;
+    margin-left: 80px;
+    width: 260px;
+    height: 260px;
+    filter: drop-shadow(7px 18px 30px rgba(0, 0, 0, 0.2));
+}
+
+.second-main-image {
+    order: 3;
+    margin-top: 80px;
+    margin-left: -60px;
+    width: 260px;
+    height: 265px;
+    filter: drop-shadow(-10px 10px 30px rgba(0, 0, 0, 0.35));
+}
+
+.third-main-image {
+    margin-top: 270px;
+    margin-left: -200px;
+    width: 270px;
+    height: 265px;
+    filter: drop-shadow(0px -5px 40px rgba(0, 0, 0, 0.35));
+}
+
+.search-box {
+    width: 580px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: -160px;
+}
+
+.search-box form {
+    display: flex;
+}
+
+.first-screen div.search-box .input-form{
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    width: 380px;
+    height: 51px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-style: solid;
+    color: #3b4147aa;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 3px 15px;
+}
+
+.first-screen div.search-box .input-button{
+    width: 70px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    margin-right: 90px;
+    background-color: #38B000;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.first-screen div.search-box i.bi{
+    color: white;
+    font-size: 1.7em;
+}
+
+/* Container for Second Screen */
+.container-sub-main-text-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-sub-main-text-1 .sub-main-text-1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #343A40;
+}
+
+.card-trending-foods {
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-trending-foods .card {
+    width: 340px;
+    height: 380px;
+    background-color: #F4F5F7;
+    border-radius: 10px;
+    margin-right: 35px;
+}
+
+.card-trending-foods .card .container-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.card-trending-foods img {
+    height: 200px;
+    width: 203px;
+}
+
+.card-trending-foods p.food-name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.star-rating-good {
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.card-trending-foods .card .star-rating-good i {
+    color: #FFB703;
+}
+
+.card-trending-foods .card .price-container {
+    font-weight: 500;
+    width: 350px;
+    height: 50px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card-trending-foods .card .price-container .price-dotted {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.card-trending-foods .card .price-container .button-order {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    height: 50px;
+    width: 100px;
+    margin-left: 60px;
+    background-color: #38B000;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+/* Container for Third Screen */
+.third-screen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(112, 224, 0, 0.1);
+}
+
+.container-sub-main-text-2 {
+    margin-top: 20px;
+}
+
+.container-sub-main-text-2 .sub-main-text-2 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #343A40;
+}
+
+.card-collection-foods {
+    width: 100%;
+    height: 830px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-collection-foods .card {
+    width: 340px;
+    height: 380px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10px 17px;
+}
+
+.card-collection-foods .card .container-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.card-collection-foods img {
+    height: 200px;
+    width: 203px;
+}
+
+.card-collection-foods p.food-name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.star-rating-good {
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.card-collection-foods .card .star-rating-good i {
+    color: #FFB703;
+}
+
+.card-collection-foods .card .price-container {
+    font-weight: 500;
+    width: 350px;
+    height: 50px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card-collection-foods .card .price-container .price-dotted {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.card-collection-foods .card .price-container .button-order {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    height: 50px;
+    width: 100px;
+    margin-left: 60px;
+    background-color: #38B000;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}

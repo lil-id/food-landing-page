@@ -6,12 +6,151 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Mobile Phone */
+@media screen and (max-width: 767px) {
+    .first-screen .container-main-head div.container-logo {
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .container-main-image {
+        display: none !important;
+    }
+    .first-screen .container-main-head .container-text-head {
+        margin-left: 15px;
+    }
+    .container-main-head .container-text-head h1.main-text-head-grey {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 70px;
+        color: #343A40;
+    }
+    .container-main-head .container-text-head .main-text-head-green {
+        font-weight: 700;
+        font-size: 45px;
+        color: #65CA00;
+    }
+    .container-main-head .container-text-head p.main-sub-text {
+        margin-top: -25px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 27px;
+        color: #71767b;
+    }
+    .container-sub-main-text-1 h1.sub-main-text-1 {
+        font-weight: 700;
+        font-size: 25px;
+        color: #343A40;
+    }
+    .container-sub-main-text-2 h1.sub-main-text-2 {
+        font-weight: 700;
+        font-size: 25px;
+        color: #343A40;
+    }
+    
+    /* Container Search Box */
+    search-bar {
+        margin-left: -35px;
+        margin-top: 120px;
+    }
+
+    .first-screen div.search-box {
+        width: auto;
+        height: auto;
+    }
+
+    .first-screen div.search-box input.input-form {
+        height: 45px;
+        width: 245px;
+        flex: 1;
+        font-family: 'Poppins', sans-serif;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-style: solid;
+        color: #3b4147aa;
+        font-weight: 300;
+        font-size: 14px;
+        padding: 1px 15px;
+    }
+    
+    .first-screen div.search-box .input-button{
+        height: 50px;
+        width: 55px;
+        border: none;
+        cursor: pointer;
+        margin-right: 90px;
+        background-color: #38B000;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .first-screen div.search-box i.bi{
+        color: white;
+        font-size: 1.7em;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-main-head .container-text-head h1.main-text-head-grey {
+        font-weight: 700;
+        font-size: 75px;
+        line-height: 100px;
+        color: #343A40;
+    }
+
+    .container-main-head .container-text-head .main-text-head-green {
+        font-weight: 700;
+        font-size: 75px;
+        color: #65CA00;
+    }
+
+    .container-main-head .container-text-head p.main-sub-text {
+        margin-top: -25px;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 37px;
+        color: #71767b;
+    }
+
+    .container-sub-main-text-1 h1.sub-main-text-1 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #343A40;
+    }
+
+    .container-sub-main-text-2 h1.sub-main-text-2 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #343A40;
+    }
+
+    /* Container Main Image */
+    .container-main-image {
+        display: none !important;
+    }
+    /* Container Search Box */
+    search-bar {
+        margin-top: 120px;
+    }
+}
+
+/* Desktop 1*/
+@media screen and (min-width: 1024px) and (max-width: 1480px){
+    .container-main-image {
+        display: none !important;
+    }
+    search-bar {
+        margin-left: -550px;
+        margin-top: 670px;
+    }
+}
+
 /* Container for First Screen */
 .first-screen {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 730px;
+    width: auto;
+    height: auto;
     background: rgba(112, 224, 0, 0.1);
 }
 
@@ -26,10 +165,12 @@ html, body {
 }
 
 .container-main-head div.container-text-head {
-    width: 600px;
-    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: auto;
     margin-left: 50px;
-    margin-top: -5px; 
+    margin-top: -5px;
 }
 
 .container-text-head h1.main-text-head-grey {
@@ -45,7 +186,7 @@ html, body {
     color: #65CA00;
 }
 
-.main-sub-text {
+.container-text-head p.main-sub-text {
     margin-top: -25px;
     font-weight: 400;
     font-size: 22px;
@@ -59,7 +200,7 @@ html, body {
     width: 700px;
     height: 550px;
     margin-top: 120px;
-    margin-left: 180px;
+    margin-left: 270px;
 }
 
 .first-main-image {
@@ -88,17 +229,15 @@ html, body {
 }
 
 .search-box {
+    display: flex;
     width: 580px;
     height: 100px;
     margin-left: 50px;
-    margin-top: -160px;
+    margin-top: -100px;
+    margin-bottom: 85px;
 }
 
-.search-box form {
-    display: flex;
-}
-
-.first-screen div.search-box .input-form{
+.input-form{
     flex: 1;
     font-family: 'Poppins', sans-serif;
     width: 380px;
@@ -112,7 +251,7 @@ html, body {
     padding: 3px 15px;
 }
 
-.first-screen div.search-box .input-button{
+.input-button{
     width: 70px;
     height: 60px;
     border: none;
@@ -123,12 +262,17 @@ html, body {
     border-bottom-right-radius: 10px;
 }
 
-.first-screen div.search-box i.bi{
+i.bi{
     color: white;
     font-size: 1.7em;
 }
 
 /* Container for Second Screen */
+.second-screen {
+    height: auto;
+    width: auto;
+}
+
 .container-sub-main-text-1 {
     display: flex;
     justify-content: center;
@@ -142,16 +286,20 @@ html, body {
 }
 
 .card-trending-foods {
-    width: 100%;
-    height: 600px;
-    margin-top: 30px;
+    width: auto;
+    height: auto;
+    margin-bottom: 100px;
+    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .card-trending-foods .card {
     width: 340px;
-    height: 380px;
+    height: 370px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #F4F5F7;
     border-radius: 10px;
     margin-right: 35px;
@@ -180,6 +328,7 @@ html, body {
 }
 
 .card-trending-foods .card .star-rating-good i {
+    font-size: 0.95em;
     color: #FFB703;
 }
 
@@ -224,6 +373,10 @@ html, body {
 }
 
 .container-sub-main-text-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
@@ -235,8 +388,9 @@ html, body {
 
 .card-collection-foods {
     width: 100%;
-    height: 830px;
+    height: auto;
     margin-top: 20px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -244,10 +398,11 @@ html, body {
 
 .card-collection-foods .card {
     width: 340px;
-    height: 380px;
+    height: auto;
+    padding: 20px 5px;
     background-color: #ffffff;
     border-radius: 10px;
-    margin: 10px 17px;
+    margin: 13px 13px;
 }
 
 .card-collection-foods .card .container-image {
@@ -265,6 +420,7 @@ html, body {
     font-size: 22px;
     font-weight: 600;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .star-rating-good {
@@ -273,6 +429,7 @@ html, body {
 }
 
 .card-collection-foods .card .star-rating-good i {
+    font-size: 0.95em;
     color: #FFB703;
 }
 
